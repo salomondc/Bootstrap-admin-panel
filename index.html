@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+  <title>Follow-up of inclusion</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script language="javascript" src="./files/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="./files/jquery.blockUI.js"></script>
+  <script language="javascript" src="./files/survol.1.2.js"></script>
+
+  <script language="javascript">
+    $(function(){
+      $("select[name=select]").change(function(){
+        $.blockUI({message:'<h1><img id="imageh1" src="'+i1.src+'"/>&nbsp;&nbsp;&nbsp;&nbsp;Process in progress...</h1>'}) ;
+      })
+      $("#bt_retour").click(function(){
+        $.blockUI({message:'<h1><img id="imageh1" src="'+i1.src+'"/>&nbsp;&nbsp;&nbsp;&nbsp;Process in progress...</h1>'}) ;
+      })
+    })
+  </script>
+
+  <link rel="stylesheet" href="./files/essais.css" type="text/css"> 
+  <link rel="stylesheet" type="text/css" href="./files/print.css" media="print">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<center class='css_wont_collide'>
+
+  <!-- PRE-HEAD -->
+
+  <br>
+  <p>VALID-STS</p>
+
+  <!-- HEAD -->
+
+  </div>
+  <div style='max-width: 960px'>
+    <div style="background-color: #00307b; color:white" class='col-md-12 col-lg-10'>
+      <br>
+      <h4>Clinical research Associate<br>Mrs/Miss Claire LANTIER</h4>
+      <br>
+    </div>
+  </div>
+  <script src="./Redir.js"></script>
+  <br>
+  <div class="col-sm-11 col-8">
+    <form name="filtre">
+      <span>INCLUSION FOLLOW-UP: 
+      <select name="select" onchange="javascript:Redir();">
+        <option value="1" selected="">Overall perspective</option>
+        <option value="2">Distribution by centers/Investigators</option>
+        <option value="6">Distribution by countries/centers</option>
+        <option value="4">Distribution by stratum group</option>
+        <option value="5">Inclusion curve</option>
+      </select>
+      </span>
+    </form>
+  </div>  
+
+  <!-- BODY -->
+
+  <br>
+  <div style='max-width: 1320px'>
+    <div class="col-sm-11 col-11">
+      <div class="row">
+        
+                                                                    <!-- CASES REGISTERED -->
+        <div class="col-md-6 col-xxl-3 col-sm-12">
+          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
+            <thead>
+              <tr><th>Cases registered</th><th class='centerize'>10</th></tr>
+            </thead>
+            <thead>
+              <th>Wrongly included</th>
+            </thead>
+            <tbody>
+              <tr><td class='primary'>Yes :</td><td class='centerize'>0</td></tr>
+              <tr><td>No : </td><td class='centerize'>10</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+                                                                      <!-- CASES INCLUDED -->
+        <div class="col-md-6 col-xxl-3 col-sm-12">      
+          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
+            <thead><th>Cases included</th><th class='centerize'>10</th></thead>
+            <thead><th>Validated by investigator</th></thead>
+            <tbody>
+              <tr><td>Yes : </td><td class='centerize'>0</td></tr>
+              <tr><td>No :</td><td class='centerize'>10</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+                                                                      <!-- CASES VALIDATED -->
+        <div class="col-md-6 col-xxl-3 col-sm-12">
+          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
+            <thead><th>Cases validated by investigators</th><th>0</th></thead>
+            <thead><th>Validated by Monitor</th></thead>
+            <tbody>
+              <tr><td>Yes : </td><td class='centerize'>0</td></tr>          
+              <tr><td>No :</td><td class='centerize'>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+                                                                       <!-- CASES INCLUDED -->
+        <div class="col-md-6 col-xxl-3 col-sm-12">
+          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
+            <thead><th>Cases validated by Monitor : </th><th>0</th></thead>
+            <thead><th><br></th></thead>            
+            <tbody>
+              <tr><td><br></td><td><br></td></tr>          
+              <tr><td><br></td><td><br></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    <div class="row">
+
+                                                             <!-- INCLUSTIONS DISTRIBUTION -->
+      <div class="col-xs-12">
+        <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
+          <thead><th>Distribution of inclusions</th><th class='centerize'>10</th><th class='centerize'>10%</th></thead>
+          <thead><th>Distribution by stratum group</th></thead>    
+          <tbody>
+            <tr><td>Groupe d'expérimentation de la sous-cohorte : </td><td class='centerize'>2</td><td class='centerize'>20%</td></tr>            
+            <tr><td>Groupe dispositif expérimenté seul : </td><td class='centerize'>6</td><td class='centerize'>60%</td></tr>        
+            <tr><td>Groupe témoin de la sous-cohorte : </td><td class='centerize'>1</td><td class='centerize'>10%</td></tr>      
+            <tr><td>TEST Max 50 Caractéres : </td><td class='centerize'>1</td><td class='centerize'>10%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+                                                                     <!-- INCLUSION CURVE -->
+      <div class="col-xs-12">
+        <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
+          <thead>
+            <th colspan="5">Inclusion rate <font color="#00FF99">Satisfactory 
+              <a href="https://dev.eolnavigation.com/V_Dev/SuiviInclusionCourbe.asp">
+                Inclusion curve
+              </a>
+            </th>   
+          </thead>
+          <tbody>
+            <tr><td>Number of inclusions:</td><td class='centerize'>Observed</td><td class='centerize'>Planned</td></tr>        
+            <tr><td>Per day :</td><td class='centerize'>0,34</td><td class='centerize'>0,27</td></tr>        
+            <tr><td>Per month:</td><td class='centerize'>10,48</td><td class='centerize'>8,14</td>
+            </tr><tr><td colspan='5'><br></td></tr>
+            <tr><td class='centerize' colspan="5">Originally planned inclusion end date : 20/04/2022</td></tr>        
+            <tr><td class='centerize' colspan="5">Current anticipated inclusion end date : 04/02/2022</td></tr>            
+            <tr><td class='centerize' colspan="5">Number of additional Investigators required to meet initial deadline : 0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+  <a style='color: black;' id="bt_retour" href="javascript:history.go(-1);"><b>RETURN</b></a>
+  <br><br><br>
+
+</center>
+</body>
+</html>
