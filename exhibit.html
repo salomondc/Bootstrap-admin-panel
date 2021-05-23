@@ -1,0 +1,242 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Exhibit</title>
+  <style>
+    .css_wont_collide * { font-family: 'Ubuntu'; transition: width .3s, background-color .3s;}
+  </style>
+</head>
+<body class="bg-light">
+  
+<center class='css_wont_collide'>
+
+  <!-- HEAD -->
+  
+  <div class='col-md-12 col-lg-12 shadow bg-light text-dark pb-3'>
+    <br>
+    <figcaption class="blockquote-footer mb-3">BOOTSTRAP</figcaption>
+    <h4><b>Exhibit</b><br><span class="text-muted">Bootstrap - Components</span></h4>
+  </div>
+  <br>
+
+  <!-- BODY -->
+
+  
+  
+  <div style='max-width: 1320px'>
+    <div class="col-11 col-xs-12 position-relative d-flex mb-5 pb-3 ">
+      <div class="position-absolute end-0 d-flex">
+        <div class="btn-group">
+          <a href="index.html" role="button" class="btn btn-outline-dark">index</a>
+          <a href="exhibit.html" role="button" class="btn btn-outline-dark active">exhibit</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-11">
+      <p class="text-muted">Here I showcase even more bootstrap components<br>code for this page is on github aswell! look up for the <b>exhibit.html</b> file.</p>
+    </div>
+    
+    <div class="shadow-sm col-11">
+      <table class='table table-dark'>
+          <thead><th><center><h2 class="my-5">Search and Filter</h2></center></th></thead>
+      </table>
+    </div>
+
+
+    
+
+    <div class="btn-toolbar justify-content-end justify-content-sm-between col-11" role="toolbar" aria-label="Toolbar with button groups">
+
+      <div class="btn-group col-6 col-sm-2 mb-3" role="group" aria-label="First group">
+        <button type="button" class="btn btn-outline-dark">1</button>
+        <button type="button" class="btn btn-outline-dark">2</button>
+        <button type="button" class="btn btn-outline-dark">3</button>
+        <button type="button" class="btn btn-outline-dark">4</button>
+      </div>
+
+      <div class="col-12 col-sm-6 mb-3">
+        <div class="input-group">
+          <div class="input-group-text"><i class="bi bi-search"></i></div>
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="btnGroupAddon2">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bg-light border-rounded border mb-3 col-11">
+      <table class="table table-hover">
+        <thead>
+          <th scope="col">Case Nº</th><th scope="col">Patient</th><th scope="col">ID</th><th scope="col">Date</th>
+        </thead>
+        <tbody>
+          <tr style="cursor: pointer;" onClick="window.location.href = 'exhibit.html/79791';"><td>#79791</td><td>Elizabeth Bernard</td><td>992857</td><td>22-03-2021</td></tr>
+          <tr style="cursor: pointer;" onClick="window.location.href = 'exhibit.html/79742';"><td>#79742</td><td>Emma Laurent</td><td>992856</td><td>21-03-2021</td></tr>
+          <tr style="cursor: pointer;" onClick="window.location.href = 'exhibit.html/79673';"><td>#79673</td><td>John Doe</td><td>992855</td><td>18-03-2021</td></tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <div class="d-flex justify-content-end justify-content-sm-between col-11 mb-4">
+      <button class="btn btn-outline-dark">Previous</button>
+      <button class="btn btn-outline-dark ms-3">Next</button>
+    </div>
+    
+    
+    <div class="shadow-sm col-11">
+      <table class='table table-dark'>
+          <thead><th><center><h2 class="my-5">Forms & Sumbit</h2></center></th></thead>
+      </table>
+    </div>
+
+    <div class="col-11 my-4 border border-dark">
+      <h3 class="pb-2 pt-3">Include New Case</h3>
+    </div>
+
+    <div class="col-11 mb-3">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Agent" aria-label="Agent" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@corpmail.com</span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">https://www.corpwebsite.com/dept/</span>
+            <input type="text" class="form-control" id="basic-url" placeholder="Reciever Department">
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Patient</span>
+        <input type="text" class="form-control" placeholder="Full name" aria-label="Full name" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group col-6 mb-3">
+        <span class="input-group-text" id="basic-addon1">Case</span>
+        <input type="text" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text">Description</span>
+        <textarea class="form-control" aria-label="Description"></textarea>
+      </div>
+      
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Patient" aria-label="Patient">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Mail" aria-label="Mail">
+          </div>
+        </div>
+        <div class="col-6 col-sm-8 col-lg-4">
+          <div class="input-group col-6 mb-3">
+            <span class="input-group-text" id="basic-addon1">Date</span>
+            <input type="text" class="form-control" placeholder="dd-mm-yyyy" aria-label="dd-mm-yyyy" aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-3">
+          <div class="input-group mb-3">
+            <span class="input-group-text">€</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <div>
+          <button class="btn btn-danger me-2">Delete</button>
+          <button class="btn btn-outline-danger">Clear</button>
+        </div>
+        <button class="btn btn-outline-dark">Submit</button>
+      </div>
+    </div>
+
+    
+    <div class="shadow-sm col-11 mt-5">
+      <table class='table table-dark'>
+          <thead><th><center><h2 class="my-5">Text Information</h2></center></th></thead>
+      </table>
+    </div>
+
+
+    
+    
+    <div class="d-flex col-11 justify-content-end">
+      
+      <div class="col-4">
+        <div id="list-example" class="list-group sticky-top me-3">
+          <a class="list-group-item list-group-item-action mt-3" href="#list-item-1">Item 1</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+          <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+        </div>
+      </div>
+
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example col-8 text-start mt-3" tabindex="0">
+        <h4 id="list-item-1">Item 1</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit distinctio, excepturi atque iure minus voluptatum dignissimos aperiam eveniet sed natus rem eos unde necessitatibus optio esse reiciendis porro laudantium reprehenderit?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit distinctio, excepturi atque iure minus voluptatum dignissimos aperiam eveniet sed natus rem eos unde necessitatibus optio esse reiciendis porro laudantium reprehenderit?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit distinctio, excepturi atque iure minus voluptatum dignissimos aperiam eveniet sed natus rem eos unde necessitatibus optio esse reiciendis porro laudantium reprehenderit?</p>
+        <h5 class="text-muted">Sub title</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <h4 id="list-item-2">Item 2</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <h4 id="list-item-3">Item 3</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <h4 id="list-item-4">Item 4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda odio ex nemo doloremque adipisci unde asperiores molestias. Pariatur deleniti, sed quam quos saepe perspiciatis odit velit officiis ratione aliquid.</p>
+        
+      </div>
+    </div>
+    
+
+    <table class="table border-dark">
+      <thead><th></th></thead>
+    </table>
+
+    <div class=" col-11 d-flex justify-content-end justify-content-sm-center">
+      <a class="d-inline-flex btn btn-outline-dark mb-4" role="button" id="bt_retour" href="index.html"><i class="d-inline-flex align-items-center align-self-center bi bi-caret-left-fill align-top"></i>&nbsp;RETURN</a>
+    </div>
+  
+
+  </div>
+</center>
+</body>
+</html>

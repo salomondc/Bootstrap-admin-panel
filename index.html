@@ -1,175 +1,302 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
+  <!-- Originally in previous document -->
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> -->
+  <!-- It caused 'é' characters to not display -->
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-
+  
   <title>Follow-up of inclusion</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <script language="javascript" src="./files/jquery.js"></script>
-  <script language="javascript" type="text/javascript" src="./files/jquery.blockUI.js"></script>
-  <script language="javascript" src="./files/survol.1.2.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-  <script language="javascript">
-    $(function(){
-      $("select[name=select]").change(function(){
-        $.blockUI({message:'<h1><img id="imageh1" src="'+i1.src+'"/>&nbsp;&nbsp;&nbsp;&nbsp;Process in progress...</h1>'}) ;
-      })
-      $("#bt_retour").click(function(){
-        $.blockUI({message:'<h1><img id="imageh1" src="'+i1.src+'"/>&nbsp;&nbsp;&nbsp;&nbsp;Process in progress...</h1>'}) ;
-      })
-    })
-  </script>
-
-  <link rel="stylesheet" href="./files/essais.css" type="text/css"> 
-  <link rel="stylesheet" type="text/css" href="./files/print.css" media="print">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Ubuntu'; transition: width .3s, background-color 3s;}
+  </style>
 
 </head>
-<body>
+<body class="bg-light">
 <center class='css_wont_collide'>
 
-  <!-- PRE-HEAD -->
-
-  <br>
-  <p>VALID-STS</p>
-
   <!-- HEAD -->
-
+  
+<div class='col-md-12 col-lg-12 shadow bg-light text-dark pb-3'>
+    <br>
+    <figcaption class="blockquote-footer mb-3">VALID-STS</figcaption>
+    <h4>Clinical research Associate<br>Mrs/Miss Claire LANTIER</h4>
   </div>
-  <div style='max-width: 960px'>
-    <div style="background-color: #00307b; color:white" class='col-md-12 col-lg-10'>
-      <br>
-      <h4>Clinical research Associate<br>Mrs/Miss Claire LANTIER</h4>
-      <br>
-    </div>
-  </div>
-  <script src="./Redir.js"></script>
   <br>
-  <div class="col-sm-11 col-8">
-    <form name="filtre">
-      <span>INCLUSION FOLLOW-UP: 
-      <select name="select" onchange="javascript:Redir();">
-        <option value="1" selected="">Overall perspective</option>
-        <option value="2">Distribution by centers/Investigators</option>
-        <option value="6">Distribution by countries/centers</option>
-        <option value="4">Distribution by stratum group</option>
-        <option value="5">Inclusion curve</option>
-      </select>
-      </span>
-    </form>
-  </div>  
 
   <!-- BODY -->
 
-  <br>
   <div style='max-width: 1320px'>
+    <div class="col-11 col-xs-12 position-relative d-flex ">
+      <div class="dropdown">
+        <button class="btn btn-outline-dark dropdown-toggle shadow-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Inclusion Follow up:
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="SuiviInclusion_global.asp">Overall perspective</a></li>
+          <li><a class="dropdown-item" href="SuiviInclusion_Repartition.asp?p=2&type=g">Distribution by centers/Investigators</a></li>
+          <li><a class="dropdown-item" href="SuiviInclusion_RepartitionPays.asp?r=1&p=2&type=s">Distribution by countries/centers</a></li>
+          <li><a class="dropdown-item" href="SuiviInclusion_Repartition.asp?p=2&type=s">Distribution by stratum group</a></li>
+          <li><a class="dropdown-item" href="SuiviInclusionCourbe.asp?p=3">Inclusion curve</a></li>
+        </ul>
+      </div>
+      <div class="position-absolute end-0 d-flex">
+        <div class="btn-group">
+          <a href="index.html" role="button" class="btn btn-outline-dark active">index</a>
+          <a href="exhibit.html" role="button" class="btn btn-outline-dark">exhibit</a>
+        </div>
+      </div>
+    </div>
+
+  <br>
     <div class="col-sm-11 col-11">
+
+      <!-- TITLE -->
+
+      <div>
+        <div class="card shadow-sm mb-3">
+          <div class="card-header alert-primary pt-3">
+            <center>
+              <h5 clas="card-title">Cases</h5>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      
       <div class="row">
         
-                                                                    <!-- CASES REGISTERED -->
-        <div class="col-md-6 col-xxl-3 col-sm-12">
-          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
-            <thead>
-              <tr><th>Cases registered</th><th class='centerize'>10</th></tr>
-            </thead>
-            <thead>
-              <th>Wrongly included</th>
-            </thead>
-            <tbody>
-              <tr><td class='primary'>Yes :</td><td class='centerize'>0</td></tr>
-              <tr><td>No : </td><td class='centerize'>10</td></tr>
-            </tbody>
-          </table>
-        </div>
+        <!-- SUB-TITLE -->
 
-                                                                      <!-- CASES INCLUDED -->
-        <div class="col-md-6 col-xxl-3 col-sm-12">      
-          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
-            <thead><th>Cases included</th><th class='centerize'>10</th></thead>
-            <thead><th>Validated by investigator</th></thead>
-            <tbody>
-              <tr><td>Yes : </td><td class='centerize'>0</td></tr>
-              <tr><td>No :</td><td class='centerize'>10</td></tr>
-            </tbody>
-          </table>
+        <div class="col-xs-12 col-sm-6">
+          <div class="card shadow-sm mb-3">
+            <div class="card-header alert-secondary pt-3">
+              <center>
+                <h5 clas="card-title">Entry</h5>
+              </center>
+            </div>
+          </div>
+
+          <div class="row">
+            
+                                                                        <!-- CASES REGISTERED -->
+            <div class="col-xl-6 col-lg-12 mb-3">
+              <div class="card shadow-sm">
+                <div class="card-header alert-secondary pt-3 d-flex justify-content-between align-item-center">
+                  <h5 clas="card-title">Registered</h5>
+                  <div>
+                    <h5><span class="badge bg-light text-secondary shadow-sm">32</span></h5>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <table class='table mb-0 table-bordered table-hover table-light table-striped'>
+                    <thead>
+                      <th class="table-secondary alert-secondary">Wrongly included</th>
+                    </thead>
+                    <tbody>
+                      <tr><td class='secondary'>Yes :</td><td><center>1</center></td></tr>
+                      <tr><td>No : </td><td><center>31</center></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+                                                                          <!-- CASES INCLUDED -->
+            <div class="col-xl-6 col-lg-12 mb-3">
+              <div class="card shadow-sm">
+                <div class="card-header alert-secondary pt-3 d-flex justify-content-between align-item-center">
+                  <h5 clas="card-title">Included</h5>
+                  <div>
+                    <h5><span class="badge bg-light text-secondary shadow-sm">32</span></h5>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <table class='table mb-0 table-bordered table-hover table-light table-striped'>
+                    <thead>
+                      <th class="table-secondary alert-secondary">Valid. by investigator</th>
+                    </thead>
+                      <tr><td>Yes : </td><td><center>27</center></td></tr>
+                      <tr><td>No : </td><td><center>5</center></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
+  
+        <!-- SUB-TITLE -->
+
+        <div class="col-xs-12 col-sm-6">
+
+          <div class="card shadow-sm mb-3">
+            <div class="card-header alert-success pt-3">
+              <center>
+                <h5 clas="card-title">Validated</h5>
+              </center>
+            </div>
+          </div>
+
+          <div class="row">
 
                                                                       <!-- CASES VALIDATED -->
-        <div class="col-md-6 col-xxl-3 col-sm-12">
-          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
-            <thead><th>Cases validated by investigators</th><th>0</th></thead>
-            <thead><th>Validated by Monitor</th></thead>
-            <tbody>
-              <tr><td>Yes : </td><td class='centerize'>0</td></tr>          
-              <tr><td>No :</td><td class='centerize'>0</td></tr>
-            </tbody>
-          </table>
-        </div>
+            <div class="col-xl-6 col-lg-12 mb-3">
+              <div class="card shadow-sm">
+                <div class="card-header alert-success pt-3 d-flex justify-content-between align-item-center">
+                  <h5 clas="card-title">By Investigators</h5>
+                  <div>
+                    <h5><span class="badge bg-light text-success shadow-sm">28</span></h5>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <table class='table mb-0 table-bordered table-hover table-light table-striped'>
+                    <thead><th class="table-success alert-success">Was validated</th></thead>
+                    <tbody>
+                      <tr><td>Yes : </td><td><center>26</center></td></tr>          
+                      <tr><td>No :</td><td><center>2</center></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
 
                                                                        <!-- CASES INCLUDED -->
-        <div class="col-md-6 col-xxl-3 col-sm-12">
-          <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
-            <thead><th>Cases validated by Monitor : </th><th>0</th></thead>
-            <thead><th><br></th></thead>            
-            <tbody>
-              <tr><td><br></td><td><br></td></tr>          
-              <tr><td><br></td><td><br></td></tr>
-            </tbody>
-          </table>
+            <div class="col-xl-6 col-lg-12 mb-3">
+              <div class="card shadow-sm">
+                <div class="card-header alert-success pt-3 d-flex justify-content-between align-item-center">
+                  <h5 clas="card-title">By Monitor</h5>
+                  <div>
+                    <h5><span class="badge bg-light text-success shadow-sm">32</span></h5>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <table class='table mb-0 table-bordered table-hover table-light table-striped'>
+                    <thead class="table-success alert-success"><th>Was validated</th></thead>            
+                    <tbody>
+                      <tr><td>Yes :</td><td><center>29</center></td></tr>          
+                      <tr><td>No :</td><td><center>3</center></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
+      </div>
+      
+      <div class="row">
       </div>
 
     <div class="row">
 
-                                                             <!-- INCLUSTIONS DISTRIBUTION -->
-      <div class="col-xs-12">
-        <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
-          <thead><th>Distribution of inclusions</th><th class='centerize'>10</th><th class='centerize'>10%</th></thead>
-          <thead><th>Distribution by stratum group</th></thead>    
-          <tbody>
-            <tr><td>Groupe d'expérimentation de la sous-cohorte : </td><td class='centerize'>2</td><td class='centerize'>20%</td></tr>            
-            <tr><td>Groupe dispositif expérimenté seul : </td><td class='centerize'>6</td><td class='centerize'>60%</td></tr>        
-            <tr><td>Groupe témoin de la sous-cohorte : </td><td class='centerize'>1</td><td class='centerize'>10%</td></tr>      
-            <tr><td>TEST Max 50 Caractéres : </td><td class='centerize'>1</td><td class='centerize'>10%</td></tr>
-          </tbody>
-        </table>
+      <div>
+        <div class="card shadow-sm mb-3">
+          <div class="card-header alert-primary pt-3">
+            <center>
+              <h5 clas="card-title">Inclusions</h5>
+            </center>
+          </div>
+        </div>
+      </div>
+
+                                                                  <!-- INCLUSTIONS DISTRIBUTION -->
+      <div class="col-xs-12 mb-3">
+        <div class="card shadow-sm">
+          <div class="card-header alert-secondary pt-3 d-flex justify-content-between align-item-center">
+            <h5 clas="card-title">Distribution</h5>
+            <div class="d-flex flex-row">
+              <h5><span class="badge bg-light text-dark shadow-sm">32</span></h5>
+              <h5 class="ps-2"><span class="badge bg-light text-dark shadow-sm">84%</span></h5>
+            </div>
+          </div>
+          <div class="card-body">  
+            <table class='table mb-0 table-bordered table-hover table-light table-striped'>
+              <thead class="table-secondary alert-secondary"><th>By stratum group</th></thead>
+              <tbody>
+                <tr><td>Groupe d'expérimentation de la sous-cohorte : </td><td><center>9</center></td><td><center>30%</center></td></tr>            
+                <tr><td>Groupe dispositif expérimenté seul : </td><td><center>12</center></td><td><center>36%</center></td></tr>        
+                <tr><td>Groupe témoin de la sous-cohorte : </td><td><center>7</center></td><td><center>12%</center></td></tr>      
+                <tr><td>TEST Max 50 Caractéres : </td><td><center>4</center></td><td><center>6%</center></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
                                                                      <!-- INCLUSION CURVE -->
-      <div class="col-xs-12">
-        <table class='table border-dark table-sm table-bordered table-hover table-light table-striped'>
-          <thead>
-            <th colspan="5">Inclusion rate <font color="#00FF99">Satisfactory 
-              <a href="https://dev.eolnavigation.com/V_Dev/SuiviInclusionCourbe.asp">
-                Inclusion curve
-              </a>
-            </th>   
-          </thead>
-          <tbody>
-            <tr><td>Number of inclusions:</td><td class='centerize'>Observed</td><td class='centerize'>Planned</td></tr>        
-            <tr><td>Per day :</td><td class='centerize'>0,34</td><td class='centerize'>0,27</td></tr>        
-            <tr><td>Per month:</td><td class='centerize'>10,48</td><td class='centerize'>8,14</td>
-            </tr><tr><td colspan='5'><br></td></tr>
-            <tr><td class='centerize' colspan="5">Originally planned inclusion end date : 20/04/2022</td></tr>        
-            <tr><td class='centerize' colspan="5">Current anticipated inclusion end date : 04/02/2022</td></tr>            
-            <tr><td class='centerize' colspan="5">Number of additional Investigators required to meet initial deadline : 0</td></tr>
+      <div class="col-xs-12 mb-3">
+        
+        <div class="card shadow-sm">
+          <div class="card-header alert-success pt-3 d-flex justify-content-between align-item-center">
+            <h5 clas="card-title">Inclusion rate</h5>
+            <div>
+              <h5><span>Satisfactory!</span></h5>
+            </div>
+          </div>
+          <div class="card-body">  
+        <table class='table mb-0 table-bordered table-hover table-light table-striped'>
+          <thead class="table-success alert-success"><th>Number of inclusions:</th><th><center>Observed</center></th><th><center>Planned</center></th></thead>
+          <tbody>     
+            <tr><td>Per day :</td><td><center>0,34</center></td><td><center>0,27</center></td></tr>        
+            <tr><td>Per month:</td><td><center>10,48</center></td><td><center>8,14</center></td>
           </tbody>
         </table>
+        </div>
+        </div>
       </div>
+
+      <center>
+        <div class="col-sm-12 col-xl-8">
+          <div class="card alert-light shadow-sm d-flex flex-row align-items-center p-2 justify-content-between px-3 mb-3">
+              <div class="d-flex flex-row align-items-center">
+                <i class="bi bi-calendar-event fs-4 mb-2 pe-4"></i>
+                <strong class="pe-3 text-start">Originally planned inclusion end date</strong>
+              </div>
+              <strong>20/04/2022</strong>
+          </div>
+        
+          <div class="card alert-light shadow-sm d-flex flex-row align-items-center p-2 justify-content-between px-3 mb-3">
+              <div class="d-flex flex-row align-items-center">
+                <i class="bi bi-calendar-plus fs-4 mb-2 pe-4"></i>
+                <strong class="pe-3 text-start">Current anticipated inclusion end date</strong>
+              </div>
+            <strong>04/02/2022</strong>
+          </div>
+        
+          <div class="card alert-light shadow-sm d-flex flex-row align-items-center p-2 justify-content-between px-3 mb-4">
+              <div class="d-flex flex-row align-items-center">
+                <i class="bi bi-person-plus fs-4 mb-2 pe-4"></i>
+                <strong class="pe-3 text-start">Number of additional Investigators required to meet initial deadline</strong>
+              </div>
+              <strong>0</strong>
+          </div>
+        </div>
+      </center>
+          </div>
+        </div>
 
     </div>
   </div>
-
-  <br>
-  <a style='color: black;' id="bt_retour" href="javascript:history.go(-1);"><b>RETURN</b></a>
-  <br><br><br>
+  <div class=" col-11 d-flex justify-content-end justify-content-sm-center">
+    <a class="d-inline-flex btn btn-outline-dark mb-4" role="button" id="bt_retour" href="javascript:history.go(-1);"><i class="d-inline-flex align-items-center align-self-center bi bi-caret-left-fill align-top"></i>&nbsp;RETURN</a>
+  
+    <a class="d-inline-flex btn btn-outline-dark mb-4 ms-3" role="button" id="bt_retour" href="exhibit.html">MORE&nbsp;<i class="d-inline-flex align-items-center align-self-center bi bi-caret-right-fill align-top"></i></a>
+  </div>
 
 </center>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
