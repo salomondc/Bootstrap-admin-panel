@@ -1,6 +1,4 @@
-# Welcome from freelancer.com!
-This is my entry's code, you can take a look ☝ 
-
-
+# Bootstrapified data
+This is a public example of an admin panel styled and made responsive with bootstrap by me.
 
 Live demo: https://freelancer-entry.vercel.app/
